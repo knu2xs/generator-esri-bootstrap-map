@@ -2,7 +2,7 @@
 
 Esri created [Esri-Bootstrap-Map-JS](https://github.com/Esri/bootstrap-map-js), a really slick looking set of templates combining [Twitter Bootstrap](http://getbootstrap.com) and the [Esri ArcGIS JavaScript API](https://developers.arcgis.com/javascript/). Although the project comes with four templates, it took me the better part of an afternoon to get one of them working the first time around. It really should not be this difficult.
 
-Enter this project a [Yeoman](http://yeoman.io/) Generator for Esri-Bootstrap-Map-JS. This project, Generator-Esri-Bootstrap-Map, slightly refactors the four templates included in the original repository created by Esri and enables extremely quick scaffolding using the templates from the original project.
+Enter this project, a [Yeoman](http://yeoman.io/) Generator for Esri-Bootstrap-Map-JS. This project, Generator-Esri-Bootstrap-Map, slightly refactors the four templates included in the original repository created by Esri and enables extremely quick scaffolding using the templates from the original project.
 
 ## Installation
 
