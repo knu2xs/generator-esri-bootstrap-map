@@ -2,12 +2,12 @@
   "name": "generator-esri-bootstrap-map",
   "version": "0.0.0",
   "description": "Yeoman generator",
-  "license": "MIT",
+  "license": "Apache 2.0",
   "main": "app/index.js",
   "repository": "knu2xs/generator-esri-bootstrap-map",
   "author": {
     "name": "Joel McCune",
-    "email": "",
+    "email": "joel.mccune@gmail.com",
     "url": "https://github.com/knu2xs"
   },
   "engines": {

@@ -52,9 +52,9 @@ var EsriBootstrapMapGenerator = yeoman.generators.Base.extend({
         this.copy('.gitignore', '.gitignore');
 
         // bootstrap map resources
-        this.copy('_bootstrapmap.js', 'javascript/bootstrapmap.js');
-        this.copy('_dojo-config.js', 'javascript/dojo-config.js');
-        this.copy('_bootstrapmap.css', 'style/bootstrapmap.css');
+        this.copy('_bootstrapmap.js', 'app/javascript/bootstrapmap.js');
+        this.copy('_dojo-config.js', 'app/javascript/dojo-config.js');
+        this.copy('_bootstrapmap.css', 'app/style/bootstrapmap.css');
 
         // template specific resources
         var sourceDir = 'map-' + this.template;
