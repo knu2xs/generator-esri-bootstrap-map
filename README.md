@@ -16,7 +16,7 @@ Head over to [Node.js](http://nodejs.org/) and whack the big green install butto
 Installing Yeoman is pretty easy. Just enter the following command at the command prompt.
 
 ```bash
-$ npm install -g yo
+npm install -g yo
 ```
 
 Although Yeoman does require and use both [Bower](http://bower.io) and [Grunt](http://gruntjs.com/), NPM takes care of downloading and installing these dependencies for you. Yes, NPM takes care of a lot of potential headaches for you.
@@ -26,7 +26,7 @@ Although Yeoman does require and use both [Bower](http://bower.io) and [Grunt](h
 Finally, to install generator-esri-bootstrap-map from npm, run:
 
 ```bash
-$ npm install -g generator-esri-bootstrap-map
+npm install -g generator-esri-bootstrap-map
 ```
 
 
@@ -35,7 +35,7 @@ $ npm install -g generator-esri-bootstrap-map
 To use the generator, create a directory, navigate to it at the command line and scaffold your new web application by entering the following. 
 
 ```bash
-$ yo esri-bootstrap-map
+yo esri-bootstrap-map
 ```
 
 This will scaffold a new application. Explore and have fun!
