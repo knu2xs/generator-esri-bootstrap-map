@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../bootstrap_v3/docs-assets/ico/favicon.png">
+
+    <title>Webmap Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" type="text/css" href="style/map-style.css">
+
+    <!-- Bootstrap-map-js -->
+    <link rel="stylesheet" type="text/css" href="http://js.arcgis.com/3.9/js/esri/css/esri.css">
+    <link rel="stylesheet" type="text/css" href="style/bootstrapmap.css">
+    <link rel="stylesheet" type="text/css" href="style/map-style.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../bootstrap_v3/docs-assets/js/html5shiv.js"></script>
+      <script src="../bootstrap_v3/docs-assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Webmap Template</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="page-header">
+            <h2>Web Maps</h2>
+            <p class="lead">Load an ArcGIS web map into the Bootstrap framework.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <h4 id="mapTitle"></h4>
+        <br>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-4">
+          <div id="mapLegendDiv"></div>
+        </div>
+        <div class="col-sm-8">
+          <!-- Bootstrap-map-js -->
+          <div id="mapDiv"></div>
+        </div>
+      </div>
+
+    </div><!-- /.container -->
+
+    <!-- script imports -->
+    <script src="javascript/dojo-config.js"></script>
+    <script src="http://js.arcgis.com/3.9compact"></script>
+    <script src="javascript/map.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
