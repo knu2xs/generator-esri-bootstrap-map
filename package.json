@@ -23,8 +23,9 @@
     "yeoman-generator"
   ],
   "dependencies": {
-    "yeoman-generator": "~0.16.0",
     "chalk": "~0.4.0",
+    "grunt": "~0.4.5",
+    "yeoman-generator": "~0.16.0",
     "yosay": "^0.1.0"
   },
   "devDependencies": {
