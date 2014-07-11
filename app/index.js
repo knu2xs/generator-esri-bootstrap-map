@@ -15,7 +15,7 @@ var EsriBootstrapMapGenerator = yeoman.generators.Base.extend({
         var done = this.async();
 
         // Have Yeoman greet the user.
-        this.log(yosay('Welcome to the marvelous EsriBootstrapMap generator!'));
+        this.log(yosay('Welcome to the Esri-Bootstrap-Map generator! Git in. Sit down. Shut up and hold on.'));
 
         var prompts = [
             {

@@ -52,40 +52,27 @@ module.exports = function (grunt) {
                     grunt.log.writeln('html file changed, updating');
                 }]
             }
+        },
+        connect: {
+            options: {
+                port: 3000,
+                hostname: 'localhost'
+            },
+            dev: {
+                options: {
+                    middleware: function(connect) {
+                        return [
+                            require('connect-livereload')(),
+                            checkForDownload,
+                            mountFolder(connect, 'app')
+                        ]
+                    }
+                }
+            }
         }
     });
 
-    // configurable output paths
-//    var yeomanConfig = {
-//        app: 'app',
-//        dist: 'dist'
-//    };
-
-    // grunt configuration
-//    grunt.initConfig({
-//        yeoman: yeomanConfig,
-//        connect: {
-//            server: {
-//                options: {
-//                    port: 9001,
-//                    base: 'app'
-//                }
-//            }
-//        },
-//        watch: {
-//            appFiles: {
-//                files: ['app/**/*'],
-//                tasks: ['compass'],
-//                options: {
-//                    livereload: true
-//                }
-//            }
-//        }
-//    });
-
-    // tell grunt what plugins to use
-//    grunt.loadNpmTasks('grunt-contrib-watch');
-
-    // register tasks
-//    grunt.registerTask('serve', ['connect']);
+    // set up aliases
+    grunt.registerTask('setup', ['copy']);
+    grunt.registerTask('serve', ['connect']);
 };
