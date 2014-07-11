@@ -15,7 +15,7 @@ module.exports = function (grunt) {
             bootstrap: {
                 files: {
                     'app/js/lib/bootstrap.min.js': 'bower_components/bootstrap/dist/js/bootstrap.min.js',
-                    'app/css/bootstrap.min.css': 'bower_components/bootstrap/dist/css/bootstrap.min.css',
+                    'app/css/lib/bootstrap.min.css': 'bower_components/bootstrap/dist/css/bootstrap.min.css',
                     'app/fonts/glyphicons-halflings-regular.eot': 'bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.eot',
                     'app/fonts/glyphicons-halflings-regular.svg': 'bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.svg',
                     'app/fonts/glyphicons-halflings-regular.ttf': 'bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf',
@@ -60,13 +60,17 @@ module.exports = function (grunt) {
             },
             dev: {
                 options: {
-                    middleware: function(connect) {
-                        return [
-                            require('connect-livereload')(),
-                            checkForDownload,
-                            mountFolder(connect, 'app')
-                        ]
-                    }
+                    base: 'app',
+                    keepalive: true,
+                    livereload: true,
+                    open: true
+//                    middleware: function(connect) {
+//                        return [
+//                            require('connect-livereload')(),
+//                            checkForDownload,
+//                            mountFolder(connect, 'app')
+//                        ];
+//                    }
                 }
             }
         }

@@ -10,21 +10,19 @@
 
     <title>Geosearch Template for Bootstrap</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Bootstrap core CSS -->
+      <link href="css/lib/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="geosearch-template.css" rel="stylesheet">
+      <!-- Bootstrap-map-js & custom styles -->
+      <link rel="stylesheet" type="text/css" href="http://js.arcgis.com/3.9/js/esri/css/esri.css">
+      <link rel="stylesheet" type="text/css" href="css/lib/bootstrapmap.css">
+      <link rel="stylesheet" type="text/css" href="css/map-style.css">
 
-    <!-- Bootstrap-map-js -->
-    <link rel="stylesheet" type="text/css" href="http://js.arcgis.com/3.9/js/esri/css/esri.css">   
-    <link rel="stylesheet" type="text/css" href="templates/bower_components/bootstrap-map-js/src/css/bootstrapmap.css">
-    <link rel="stylesheet" type="text/css" href="style/map-style.css">
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!--[if lt IE 9]>
       <script src="../bootstrap_v3/docs-assets/js/html5shiv.js"></script>
       <script src="../bootstrap_v3/docs-assets/js/respond.min.js"></script>
+      <![endif]-->
     <![endif]-->
   </head>
 
@@ -84,10 +82,11 @@
     <!-- Bootstrap-map-js -->
     <div id="mapDiv"></div>
 
-    <script src="javascript/dojo-config.js"></script>
+    <!-- script imports -->
+    <script src="js/lib/dojo-config.js"></script>
     <script src="http://js.arcgis.com/3.9compact"></script>
-    <script src="javascript/map.js"></script>
+    <script src="js/map.js"></script>
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
   </body>
 </html>

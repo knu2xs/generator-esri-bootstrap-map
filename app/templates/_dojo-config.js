@@ -4,6 +4,6 @@ var dojoConfig = {
     // enabling us to load the api from a CDN and load local modules from the correct location.
     packages: [{
         name: "application",
-        location: package_path + '/javascript'
+        location: package_path + '/js/lib'
     }]
 };
