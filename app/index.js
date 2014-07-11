@@ -40,8 +40,10 @@ var EsriBootstrapMapGenerator = yeoman.generators.Base.extend({
     scafooldFolders: function () {
         this.mkdir('app');
         this.mkdir('app/css');
+        this.mkdir('app/css/lib');
         this.mkdir('app/fonts');
         this.mkdir('app/js');
+        this.mkdir('app/js/lib')
     },
 
     copyProjectFiles: function () {
@@ -53,9 +55,9 @@ var EsriBootstrapMapGenerator = yeoman.generators.Base.extend({
         this.copy('Gruntfile.js', 'Gruntfile.js');
 
         // bootstrap map resources
-        this.copy('_bootstrapmap.js', 'app/js/bootstrapmap.js');
-        this.copy('_dojo-config.js', 'app/js/dojo-config.js');
-        this.copy('_bootstrapmap.css', 'app/css/bootstrapmap.css');
+        this.copy('_bootstrapmap.js', 'app/js/lib/bootstrapmap.js');
+        this.copy('_dojo-config.js', 'app/js/lib/dojo-config.js');
+        this.copy('_bootstrapmap.css', 'app/css/lib/bootstrapmap.css');
 
         // template specific resources
         var sourceDir = 'map-' + this.template;

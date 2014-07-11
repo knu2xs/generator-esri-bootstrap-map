@@ -1,4 +1,5 @@
 node_modules/
 app/templates/bower_components/
+app/templates/node_modules/
 temp/
 .idea/

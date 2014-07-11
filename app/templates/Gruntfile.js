@@ -27,6 +27,31 @@ module.exports = function (grunt) {
                     'app/js/lib/jquery.min.js': 'bower_components/jquery/dist/jquery.min.js'
                 }
             }
+        },
+        watch: {
+            options: {
+                spawn: false,
+                event: ['changed'],
+                livereload: true
+            },
+            javascript: {
+                files: ['app/js/*.js'],
+                tasks: [ function () {
+                    grunt.log.writeln('javascript changed, updating');
+                }]
+            },
+            style: {
+                files: ['app/css/*.css'],
+                tasks: [ function(){
+                    grunt.log.writeln('css style changed, updating');
+                }]
+            },
+            html: {
+                files: ['*.html'],
+                tasks: [ function(){
+                    grunt.log.writeln('html file changed, updating');
+                }]
+            }
         }
     });
 

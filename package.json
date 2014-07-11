@@ -1,7 +1,7 @@
 {
   "name": "generator-esri-bootstrap-map",
-  "version": "0.0.0",
-  "description": "Yeoman generator",
+  "version": "0.1.7",
+  "description": "Yeoman generator for esri-bootstrap-map",
   "license": "Apache 2.0",
   "main": "app/index.js",
   "repository": "knu2xs/generator-esri-bootstrap-map",
