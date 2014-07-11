@@ -6,8 +6,8 @@ Esri created [Esri-Bootstrap-Map-JS](https://github.com/Esri/bootstrap-map-js), 
 
 Enter this project, a [Yeoman](http://yeoman.io/) Generator for Esri-Bootstrap-Map-JS. This project, Generator-Esri-Bootstrap-Map, marries Yeoman with slightly refactored versions of the four templates included in the original repository created by Esri. Using Yeoman cuts the learning curve from an afternoon to about five minutes to get up and running with these templates.
 
-## BIG DISCLAIMER
-This thing is under heavy development and right now, does not even so much as work! I am building the freaking thing right now. Fear not. It will get built and the world will rejoice...or at least a few GIS geeks will rejoice.
+## BIG DISCLAIMER & Status
+This thing is under heavy development. Right now my initial and very limited testing indicates it will create the templates and the templates will run. However, live reloading is not yet working and I have yet to figure out how to write tests. As a result, I have not submitted this to the npm repository yet. Hence, the directions for installation will not work. However, if you know how and would like to locally install and link it up, please feel free to test and provide assistance to get this to a working beta state.
 
 ## Installation
 
@@ -43,7 +43,23 @@ To use the generator, create a directory, navigate to it at the command line and
 yo esri-bootstrap-map
 ```
 
-This will scaffold a new application. Explore and have fun!
+This will move some files around and download JQuery and Bootstrap. Once the waterfall of text stops and you are again looking at a command prompt, get the application set up using a grunt command.
+
+```bash
+grunt setup
+```
+
+Now everything is scaffolded out and you are ready to look at your handiwork. Do this by again using a little grunt.
+
+```bash
+grunt serve
+```
+
+Hopefully this helps you out!
+
+## Contribute
+
+This project was started and is maintained by [a guy](http://joelmccune.com) with a degree in Parks, Recreation and Tourism who happens to really like maps, GIS and is interested in web development. If you can help and make it better, please fork it, improve it and shoot me a pull request! I welcome assistance and input to make this a better resource for everybody.
 
 # License
 
