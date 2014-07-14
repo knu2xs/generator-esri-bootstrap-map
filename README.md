@@ -6,8 +6,8 @@ Esri created [Esri-Bootstrap-Map-JS](https://github.com/Esri/bootstrap-map-js), 
 
 Enter this project, a [Yeoman](http://yeoman.io/) Generator for Esri-Bootstrap-Map-JS. This project, Generator-Esri-Bootstrap-Map, marries Yeoman with slightly refactored versions of the four templates included in the original repository created by Esri. Using Yeoman cuts the learning curve from an afternoon to about five minutes to get up and running with these templates.
 
-## BIG DISCLAIMER & Status
-This thing is under heavy development. Right now my initial and very limited testing indicates it will create the templates and the templates will run. However, live reloading is not yet working and I have yet to figure out how to write tests. As a result, I have not submitted this to the npm repository yet. Hence, the directions for installation will not work. However, if you know how and would like to locally install and link it up, please feel free to test and provide assistance to get this to a working beta state.
+## BIG DISCLAIMER & Status (13 Jul 2014)
+This thing is under heavy development. Right now my initial and very limited testing indicates it will create the templates and the templates will run. However, live reloading is not yet working and I have yet to figure out how to write tests. Still, I encourage you to install it from the npm using the instructions below, test and help to flesh it out if you know more about this than I do! 
 
 ## Installation
 
