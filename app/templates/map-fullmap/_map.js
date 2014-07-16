@@ -7,7 +7,7 @@ require(["esri/map",
         <!-- Get a reference to the ArcGIS Map class -->
         var map = BootstrapMap.create("mapDiv", {
             basemap: "national-geographic",
-            center: [-122.8931, 47.0425],
+            center: [-122.6819, 45.5200],
             zoom: 10
         });
 

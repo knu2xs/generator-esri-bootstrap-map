@@ -7,7 +7,7 @@ require(["esri/map",
         "dojo/query",
         "application/bootstrapmap",
         "dojo/domReady!"],
-    function(Map, Scalebar, Legend, esriUtils, dom, on, query, BootstrapMap) {
+    function (Map, Scalebar, Legend, esriUtils, dom, on, query, BootstrapMap) {
         var map;
         var scalebar;
         var legend;
@@ -17,13 +17,13 @@ require(["esri/map",
 
         function loadWebmap(e) {
             // Get new webmap and extract map and map parts
-            var mapDeferred = BootstrapMap.createWebMap("68f12b304ad8495eb77fb55243c0ccc2","mapDiv", {
+            var mapDeferred = BootstrapMap.createWebMap("68f12b304ad8495eb77fb55243c0ccc2", "mapDiv", {
                 slider: true,
-                nav:false,
-                smartNavigation:false
+                nav: false,
+                smartNavigation: false
             });
 
-            mapDeferred.then(function(response) {
+            mapDeferred.then(function (response) {
                 map = response.map;
 
                 // Add titles
@@ -31,25 +31,25 @@ require(["esri/map",
                 //dom.byId("mapSubTitle").innerHTML = response.itemInfo.item.snippet;
                 // Add scalebar and legend
                 var layers = esri.arcgis.utils.getLegendLayers(response);
-                if(map.loaded){
+                if (map.loaded) {
                     initMapParts(layers);
                 }
-                else{
-                    on(map,"load",function(){
+                else {
+                    on(map, "load", function () {
                         initMapParts(layers);
                     });
                 }
 
-            },function(error){
+            }, function (error) {
                 alert("Sorry, couldn't load webmap!");
                 console.log("Error loading webmap: " & dojo.toJson(error));
             });
         }
 
-        function initMapParts(layers){
+        function initMapParts(layers) {
             //add scalebar
             scalebar = new Scalebar({
-                map:map,
+                map: map,
                 scalebarUnit: 'english'
             });
             //add legend
@@ -59,9 +59,9 @@ require(["esri/map",
             }
             else {
                 legend = new Legend({
-                    map:map,
-                    layerInfos:layers
-                },"mapLegendDiv");
+                    map: map,
+                    layerInfos: layers
+                }, "mapLegendDiv");
                 legend.startup();
             }
         }

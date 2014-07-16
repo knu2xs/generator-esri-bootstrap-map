@@ -14,8 +14,8 @@ require(["esri/map",
         <!-- Get a reference to the ArcGIS Map class -->
         var map = BootstrapMap.create("mapDiv", {
             basemap: "streets",
-            center: [-122.45, 37.77],
-            zoom: 12
+            center: [-122.6819, 45.5200],
+            zoom: 10
         });
         var scalebar = new Scalebar({
             map: map,
