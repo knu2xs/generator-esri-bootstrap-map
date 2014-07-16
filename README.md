@@ -6,8 +6,8 @@ Esri created [Esri-Bootstrap-Map-JS](https://github.com/Esri/bootstrap-map-js), 
 
 Enter this project, a [Yeoman](http://yeoman.io/) Generator for Esri-Bootstrap-Map-JS. This project, Generator-Esri-Bootstrap-Map, marries Yeoman with slightly refactored versions of the four templates included in the original repository created by Esri. Using Yeoman cuts the learning curve from an afternoon to about five minutes to get up and running with these templates.
 
-## BIG DISCLAIMER & Status (13 Jul 2014)
-This thing is under heavy development. Right now my initial and very limited testing indicates it will create the templates and the templates will run. However, live reloading is not yet working and I have yet to figure out how to write tests. Still, I encourage you to install it from the npm using the instructions below, test and help to flesh it out if you know more about this than I do! 
+## Status (16 Jul 2014)
+Right now my initial testing indicates this generator will create the templates, the templates will run and live reloading is working. However, the unit tests are not yet passing since I still need to figure out how to write them. Please install this generator from npm using the instructions below, test and help to flesh it out if you know more about this than I do!
 
 ## Installation
 
@@ -43,19 +43,13 @@ To use the generator, create a directory, navigate to it at the command line and
 yo esri-bootstrap-map
 ```
 
-This will move some files around and download JQuery and Bootstrap. Once the waterfall of text stops and you are again looking at a command prompt, get the application set up using a grunt command.
-
-```bash
-grunt setup
-```
-
-Now everything is scaffolded out and you are ready to look at your handiwork. Do this by again using a little grunt.
+Now everything is ready to go. You are ready to look at your handiwork. Do this by again using a little grunt.
 
 ```bash
 grunt serve
 ```
 
-Hopefully this helps you out!
+Live reload is enabled. This way, if you change anything in the index.html, any *.css file in the app/css directory or any *.js file in the app/js directory, the application will reload in the browser.
 
 ## Contribute
 

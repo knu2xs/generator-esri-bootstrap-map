@@ -20,19 +20,20 @@ module.exports = function (grunt) {
 
         // copy files from downloaded packages into directories
         copy: {
-            javascript: {
-                'app/js/lib/jquery.min.js': 'bower_components/jquery/dist/jquery.min.js',
-                'app/js/lib/bootstrap.min.js': 'bower_components/bootstrap/dist/js/bootstrap.min.js'
-
+            bootstrap: {
+                files: {
+                    'app/js/lib/bootstrap.min.js': 'bower_components/bootstrap/dist/js/bootstrap.min.js',
+                    'app/css/lib/bootstrap.min.css': 'bower_components/bootstrap/dist/css/bootstrap.min.css',
+                    'app/fonts/glyphicons-halflings-regular.eot': 'bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.eot',
+                    'app/fonts/glyphicons-halflings-regular.svg': 'bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.svg',
+                    'app/fonts/glyphicons-halflings-regular.ttf': 'bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf',
+                    'app/fonts/glyphicons-halflings-regular.woff': 'bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.woff'
+                }
             },
-            css: {
-                'app/css/lib/bootstrap.min.css': 'bower_components/bootstrap/dist/css/bootstrap.min.css'
-            },
-            fonts: {
-                'app/fonts/glyphicons-halflings-regular.eot': 'bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.eot',
-                'app/fonts/glyphicons-halflings-regular.svg': 'bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.svg',
-                'app/fonts/glyphicons-halflings-regular.ttf': 'bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf',
-                'app/fonts/glyphicons-halflings-regular.woff': 'bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.woff'
+            jquery: {
+                files: {
+                    'app/js/lib/jquery.min.js': 'bower_components/jquery/dist/jquery.min.js'
+                }
             }
         },
         watch: {
@@ -69,7 +70,6 @@ module.exports = function (grunt) {
                 }
             }
         }
-
     });
 
     // set up aliases
