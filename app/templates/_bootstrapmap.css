@@ -65,7 +65,7 @@ background: url(../images/popup.png) no-repeat;
 }*/
 
 .esriPopup .titleButton, .esriPopup .pointer, .esriPopup .outerPointer{
-  background: url(../../../../temp/bootstrap-map-js/src/images/popup.png) no-repeat;
+  background: url(../../images/popup.png) no-repeat;
 }
 
 

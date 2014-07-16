@@ -37,13 +37,14 @@ var EsriBootstrapMapGenerator = yeoman.generators.Base.extend({
         }.bind(this));
     },
 
-    scafooldFolders: function () {
+    scaffoldFolders: function () {
         this.mkdir('app');
         this.mkdir('app/css');
         this.mkdir('app/css/lib');
         this.mkdir('app/fonts');
         this.mkdir('app/js');
-        this.mkdir('app/js/lib')
+        this.mkdir('app/js/lib');
+        this.mkdir('app/images');
     },
 
     copyProjectFiles: function () {
@@ -64,6 +65,10 @@ var EsriBootstrapMapGenerator = yeoman.generators.Base.extend({
         this.copy(sourceDir + '/_index.html', 'app/index.html');
         this.copy(sourceDir + '/_style.css', 'app/css/map-style.css');
         this.copy(sourceDir + '/_map.js', 'app/js/map.js');
+
+        // images directory used by some of the templates
+        this.directory('images', 'app/images');
+
     },
 
     getDependencies: function() {
