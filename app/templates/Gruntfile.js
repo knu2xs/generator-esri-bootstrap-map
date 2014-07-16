@@ -13,12 +13,6 @@ module.exports = function (grunt) {
     //instead of loadNpmTasks, load all dev dependencies from the package.json
     require('load-grunt-tasks')(grunt);
 
-    // configurable paths
-    var yeomanConfig = {
-        app: 'app',
-        dist: 'dist'
-    };
-
     grunt.initConfig({
 
         // read package file for properties
@@ -26,20 +20,19 @@ module.exports = function (grunt) {
 
         // copy files from downloaded packages into directories
         copy: {
-            bootstrap: {
-                files: {
-                    'app/js/lib/bootstrap.min.js': 'bower_components/bootstrap/dist/js/bootstrap.min.js',
-                    'app/css/lib/bootstrap.min.css': 'bower_components/bootstrap/dist/css/bootstrap.min.css',
-                    'app/fonts/glyphicons-halflings-regular.eot': 'bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.eot',
-                    'app/fonts/glyphicons-halflings-regular.svg': 'bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.svg',
-                    'app/fonts/glyphicons-halflings-regular.ttf': 'bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf',
-                    'app/fonts/glyphicons-halflings-regular.woff': 'bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.woff'
-                }
+            javascript: {
+                'app/js/lib/jquery.min.js': 'bower_components/jquery/dist/jquery.min.js',
+                'app/js/lib/bootstrap.min.js': 'bower_components/bootstrap/dist/js/bootstrap.min.js'
+
             },
-            jquery: {
-                files: {
-                    'app/js/lib/jquery.min.js': 'bower_components/jquery/dist/jquery.min.js'
-                }
+            css: {
+                'app/css/lib/bootstrap.min.css': 'bower_components/bootstrap/dist/css/bootstrap.min.css'
+            },
+            fonts: {
+                'app/fonts/glyphicons-halflings-regular.eot': 'bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.eot',
+                'app/fonts/glyphicons-halflings-regular.svg': 'bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.svg',
+                'app/fonts/glyphicons-halflings-regular.ttf': 'bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf',
+                'app/fonts/glyphicons-halflings-regular.woff': 'bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.woff'
             }
         },
         watch: {
@@ -48,24 +41,6 @@ module.exports = function (grunt) {
                 event: ['changed'],
                 livereload: true
             },
-//            javascript: {
-//                files: ['app/js/*.js'],
-//                tasks: [ function () {
-//                    grunt.log.writeln('javascript changed, updating');
-//                }]
-//            },
-//            style: {
-//                files: ['app/css/*.css'],
-//                tasks: [ function () {
-//                    grunt.log.writeln('css style changed, updating');
-//                }]
-//            },
-//            html: {
-//                files: ['*.html'],
-//                tasks: [ function () {
-//                    grunt.log.writeln('html file changed, updating');
-//                }]
-//            },
             livereload: {
                 options: {
                     livereload: LIVERELOAD_PORT
@@ -80,6 +55,7 @@ module.exports = function (grunt) {
         connect: {
             options: {
                 port: 3000,
+                open: true,
                 hostname: 'localhost' // set to 0.0.0.0 if want access from external
             },
             livereload: {
@@ -92,11 +68,10 @@ module.exports = function (grunt) {
                     }
                 }
             }
-        },
-        open: true
+        }
+
     });
 
     // set up aliases
-    grunt.registerTask('setup', ['copy']);
-    grunt.registerTask('serve', ['connect', 'watch']);
+    grunt.registerTask('serve', ['copy', 'connect', 'watch']);
 };
