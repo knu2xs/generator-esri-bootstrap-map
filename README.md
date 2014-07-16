@@ -1,4 +1,4 @@
-# generator-esri-bootstrap-map [![Build Status](https://secure.travis-ci.org/knu2xs/generator-esri-bootstrap-map.png?branch=master)](https://travis-ci.org/knu2xs/generator-esri-bootstrap-map)
+# generator-esri-bootstrap-map
 
 Esri created [Esri-Bootstrap-Map-JS](https://github.com/Esri/bootstrap-map-js), a really slick set of templates combining [Twitter Bootstrap](http://getbootstrap.com) and the [Esri ArcGIS JavaScript API](https://developers.arcgis.com/javascript/). Although the project comes with four templates, it took me the better part of an afternoon to get one of them working the first time around. It really should not be this difficult.
 
