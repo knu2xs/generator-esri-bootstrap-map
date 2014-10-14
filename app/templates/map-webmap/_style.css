@@ -1,9 +1,10 @@
 body {
-  padding-top: 50px;
+    padding-top: 50px;
 }
+
 .starter-template {
-  padding: 40px 15px;
-  text-align: center;
+    padding: 40px 15px;
+    text-align: center;
 }
 
 #mapDiv {
@@ -27,6 +28,6 @@ body > .container {
 }
 
 /*table {*/
-    /*border-collapse: ;*/
-    /*border-spacing: ;*/
+/*border-collapse: ;*/
+/*border-spacing: ;*/
 /*}*/
