@@ -52,7 +52,7 @@ var EsriBootstrapMapGenerator = yeoman.generators.Base.extend({
         // general yeoman/bower/node/git resources
         this.copy('_package.json', 'package.json');
         this.copy('_bower.json', 'bower.json');
-        this.copy('.gitignore', '.gitignore');
+        this.copy('_gitignore', '.gitignore');
         this.copy('Gruntfile.js', 'Gruntfile.js');
 
         // bootstrap map resources
