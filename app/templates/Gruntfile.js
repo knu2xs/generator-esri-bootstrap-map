@@ -22,17 +22,17 @@ module.exports = function (grunt) {
         copy: {
             bootstrap: {
                 files: {
-                    'app/js/lib/bootstrap.min.js': 'bower_components/bootstrap/dist/js/bootstrap.min.js',
-                    'app/css/lib/bootstrap.min.css': 'bower_components/bootstrap/dist/css/bootstrap.min.css',
-                    'app/fonts/glyphicons-halflings-regular.eot': 'bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.eot',
-                    'app/fonts/glyphicons-halflings-regular.svg': 'bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.svg',
-                    'app/fonts/glyphicons-halflings-regular.ttf': 'bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf',
-                    'app/fonts/glyphicons-halflings-regular.woff': 'bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.woff'
+                    'app/js/lib/bootstrap.min.js': 'app/bower_components/bootstrap/dist/js/bootstrap.min.js',
+                    'app/css/lib/bootstrap.min.css': 'app/bower_components/bootstrap/dist/css/bootstrap.min.css',
+                    'app/fonts/glyphicons-halflings-regular.eot': 'app/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.eot',
+                    'app/fonts/glyphicons-halflings-regular.svg': 'app/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.svg',
+                    'app/fonts/glyphicons-halflings-regular.ttf': 'app/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf',
+                    'app/fonts/glyphicons-halflings-regular.woff': 'app/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.woff'
                 }
             },
             jquery: {
                 files: {
-                    'app/js/lib/jquery.min.js': 'bower_components/jquery/dist/jquery.min.js'
+                    'app/js/lib/jquery.min.js': 'app/bower_components/jquery/dist/jquery.min.js'
                 }
             }
         },
